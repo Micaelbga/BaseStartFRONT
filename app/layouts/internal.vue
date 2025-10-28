@@ -54,9 +54,11 @@ export default {
       triggerDrawerConfigItem(index){
          switch(index) {
             case 0:
+               this.triggerDrawerConfig()
                this.updateAppTheme()
                break;
             case 1:
+               this.$router.push("/home")
                break;
             case 2:
                break;
