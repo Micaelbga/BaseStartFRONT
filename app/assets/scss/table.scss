@@ -1,0 +1,15 @@
+.v-table {
+    border-radius: 15px !important;
+    color: rgb(var(--v-theme-black)) !important;
+    background-color: rgb(var(--v-theme-white)) !important;
+    background: rgb(var(--v-theme-white)) !important;
+}
+
+.v-data-table-header__content{
+    font-weight: bold !important;
+}
+
+.v-table__wrapper > table > thead {
+    outline: 2px solid rgb(var(--v-theme-primary)) !important;
+    font-weight: bold !important;
+}

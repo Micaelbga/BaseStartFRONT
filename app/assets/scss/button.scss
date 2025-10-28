@@ -1,0 +1,14 @@
+.v-btn--variant-elevated {
+    background: rgb(var(--v-theme-white)) !important;
+    background-color: rgb(var(--v-theme-white)) !important;
+}
+
+.btn-primary {
+    background-color: rgb(var(--v-theme-primary)) !important;
+    color: rgb(var(--v-theme-white)) !important;
+}
+
+.btn-secondary {
+    background-color: rgb(var(--v-theme-white)) !important;
+    color: rgb(var(--v-theme-primary)) !important;
+}
