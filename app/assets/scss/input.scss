@@ -1,0 +1,19 @@
+.v-input {
+    max-width: 350px !important;   
+}
+.v-input > .v-input__control {
+    border: 1px solid rgb(var(--v-theme-primary)) !important;
+    border-radius: 15px !important;
+}
+.v-input > .v-input__control .v-field {
+    border-radius: 15px !important;
+}
+.v-input > .v-input__control .v-field__outline {
+    display: none !important;
+}
+.date-picker {
+    max-width: 150px !important;
+}
+.time-picker {
+    max-width: 150px !important;
+}

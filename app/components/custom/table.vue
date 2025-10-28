@@ -3,7 +3,7 @@
     :hide-default-footer="true" 
     :headers="headers" 
     :items="items" 
-    :items-per-page="5" 
+    :items-per-page="10" 
     :page="currentPage"
   >
     <template #item.actions="{ item }">
@@ -37,12 +37,14 @@
       </div>
     </template>
     
-    <template #bottom="{ pageCount, itemsPerPage, page }">  
+    <template #bottom="{ pageCount, page }">  
       <v-pagination
         v-model="currentPage"
         :length="pageCount"
-        :total-visible="itemsPerPage"
+        :total-visible="5"
         size="small"
+        ellipsis
+        rounded
         @update:modelValue="this.$emit('changePage', page)"
       />
     </template>

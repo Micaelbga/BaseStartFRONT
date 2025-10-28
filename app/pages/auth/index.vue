@@ -7,10 +7,14 @@
             :prop_actions="tableActions" 
             @toggleActionItem="triggerActionItem"
         />
-        <custom-button prop_text="Ok" prop_icon="mdi-delete" @click="teste"/>
-        <custom-button prop_text="Ok" prop_icon="mdi-delete" prop_class="btn-secondary"/>
+        <v-btn prependIcon="mdi-delete" class="btn-primary">Ok</v-btn>
+        <v-text-field label="teste"/>
+        <v-select />
+        <input-date-picker />
+        <input-time-picker />
     </custom-page>
 </template>
+
 <script>
 export default {
     data() {
@@ -197,12 +201,9 @@ export default {
 
     methods: {
         teste(event) {
-            console.log(event);
         },
 
         triggerActionItem(index) {
-            console.log(index);
-            
             switch(index) {
             case 0:
                break;

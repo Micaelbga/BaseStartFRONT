@@ -4,11 +4,17 @@
 }
 
 .btn-primary {
+    border-radius: 12px !important;
     background-color: rgb(var(--v-theme-primary)) !important;
     color: rgb(var(--v-theme-white)) !important;
+    min-height: 50px !important;
+    min-width: 180px !important;
 }
 
 .btn-secondary {
+    border-radius: 12px !important;
     background-color: rgb(var(--v-theme-white)) !important;
     color: rgb(var(--v-theme-primary)) !important;
+    min-height: 50px !important;
+    min-width: 180px !important;
 }
