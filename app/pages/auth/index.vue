@@ -7,7 +7,7 @@
             :prop_actions="[]" 
             @toggleActionItem="triggerActionItem"
         />
-        <v-btn prependIcon="mdi-delete" class="btn-primary">Ok</v-btn>
+        <v-btn prependIcon="mdi-delete" class="btn-primary" @click="push.info('mensagem')">Ok</v-btn>
         <v-text-field label="teste"/>
         <v-select />
         <input-date-picker />
@@ -22,8 +22,14 @@ export default {
             
         }
     },
-    created() {
-        console.log(this.$axios.get('/user'))
+    async created() {
+        await this.$axios.get('/user')
+        .then((res) => {
+            console.log(res);
+        })
+        .catch((res) => {
+            console.log(res);
+        })
     },
     methods: {
         teste(event) {

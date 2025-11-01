@@ -1,6 +1,7 @@
 @use './table';
 @use './button';
 @use './input.scss';
+@use './toast.scss';
 
 .v-main > #page-container {
     padding: 20px !important;

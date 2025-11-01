@@ -11,7 +11,13 @@ export default defineNuxtConfig({
 
   devtools: { enabled: true },
   
-  css: ['~/assets/scss/main.scss', 'vuetify/styles', '@mdi/font/css/materialdesignicons.css'],
+  css: [
+    '~/assets/scss/main.scss', 
+    'vuetify/styles', 
+    '@mdi/font/css/materialdesignicons.css',
+    'notivue/notification.css',
+    'notivue/animations.css'
+  ],
   
   build: {
     transpile: ['vuetify'],
@@ -24,6 +30,7 @@ export default defineNuxtConfig({
         config.plugins.push(vuetify({ autoImport: true }))
       })
     },
+    'notivue/nuxt'
   ],
 
   vite: {
@@ -34,5 +41,15 @@ export default defineNuxtConfig({
     },
   },
 
-  plugins: ['~/plugins/vuetify', '~/plugins/axios'],
+  notivue: {
+    position: 'top-right',
+    limit: 4,
+    enqueue: true,
+    avoidDuplicates: true,
+  },
+
+  plugins: [
+    '~/plugins/vuetify', 
+    '~/plugins/axios',
+  ],
 })
